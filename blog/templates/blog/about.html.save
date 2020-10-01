@@ -1,0 +1,54 @@
+{% extends "blog/base.html" %}
+{% block content %}
+{%load static%}
+    <article class="media content-section" >
+      <div class="media-body">
+	<h2 align="middle" ><a class="article-title"></a></h2>
+        
+        
+        <div align="justify" class = "post_body" >
+      		<p class="article-content">1986 yılının 6. ayının 6. günü olan Cuma günü, sabaha karşı 6’da dünyaya gözümü açtım. Orta direk bir ailenin son çocuğuydum. İlkokulu ve ortaokulu yaşadığımız semtteki okullarda okudum. Sonrasında Yeşilköy Anadolu Lisesi’ni kazandım ve bir yılı hazırlık olmak üzere toplam 4 senemi orada geçirdim. 
+
+Ailemden öğrendiğime göre sakin, kendi halinde bir çocukmuşum. Zamanımın çoğunu oyuncaklarımla oynayarak geçirirmişim. Sinirlendiğim nadir zamanların çoğu da ablam yüzündenmiş. Canı sıkılınca bana sataşır, ben de oyuncaklarımı ona fırlatırmışım. Bizim zamanımızdaki çoğu çocuk gibi, benim de fazla oyuncağım yoktu. Üzerine binerek gezdiğim kırmızı bir eşekle saatlerimi geçirirdim. Bir de legolarım vardı. Çeşitli evler, arabalar yapardım ve artistik yeteneğimi onaylasın diye babama gösterirdim. 
+
+Oyuncaklarla oynama dönemim bilgisayarla tanışınca sona erdi. Artık bütün oyunlarımı içinde Windows 3.1 yüklü olan bilgisayarımda oynuyordum. Efsanevi Prince of Persia, Prehistoric 2 ve Fifa 94 gibi oyunları o zamanlarda oynamaya başladım. Gün geçtikçe daha fazla bilgisayar başında vakit harcıyordum.
+
+Üniversite sınavından sonra çok ilginç bir şey oldu. Okul ve bölüm tercihlerimi yapıp göndermiştim ve sonucu bekliyordum. İlk tercihim elektronik mühendisliğiydi. Daha önceki senelerde bölüme girmiş öğrencilerin puanına göre yüksek bir puan aldığım için kazanacağımı neredeyse kesin olarak görüyordum. Fakat böyle olmadı. 0.007 puan farkla istediğim bölümü kazanamamıştım. Bir sonraki tercihim olan Yıldız Teknik Üniversitesi Makine Mühendisliğine yerleştirildim. 
+
+Her ne kadar sayısal derslerim iyi olsa da Makine Mühendisliği’ni sevmemiştim. Daha o zamanlardan bu alanda çalışmayacağımı biliyordum. Fakat tekrar sınava girmek ve yıl kaybı yaşamakta istemiyordum. Planım okulu hızlıca bitirip, yöneticilik kariyerine geçiş yapmaktı. 
+
+Lisans eğitimim son yılında Erasmus programıyla Almanya’ya gittim. İlk yurtdışı tecrübem beni oldukça etkilemişti. Hayatımın bir kısmını yurtdışında geçirmek istediğime karar vermemi sağlamıştı. O dönemde yurtdışı master programlarına bakmaya başladım. Yöneticilik kariyeri düşündüğüm için işletme programlarına bakıyordum.
+
+Amerika’da başvurduğum okullardan birinden şartlı kabul aldım. Aldığım ingilizce puanı bölüm için yeterli değildi, okul başlayana kadar onların şart olarak gösterdiği puanı almam gerekiyordu. Okulun başlamasına daha 9 ay olduğu için askerlik hizmetini aradan çıkarmaya karar verdim. Tecilimi bozdurdum ve 331. kısa dönem olarak orduya katıldım. 
+
+Askerden döndüğümde iki problemle karşı karşıyaydım. Birincisi hala ingilizce sınavını verememiştim. Daha önemli diğeri ise Amerika’da okuyacak paramın olmamasıydı. Okullar çok pahalıydı ve ailemin bu masrafı karşılayacak gücü yoktu. Fakat ben ne olursa olsun Amerika’da bir süre zaman geçirmek istiyordum. Bu yüzden risk almaya karar verdim.
+
+Planım basitti. Cebimdeki para beni 6 ay idare edebilirdi. Bu zaman diliminde iş arayacaktım ve bulabilirsem geçimimi bu şekilde sağlayacaktım, bulamazsam ülkeme geri dönecektim. Şansım yaver gitti, gidişimin ikinci ayında alışveriş merkezinde satış işi buldum. Okulum bitinceye kadar da aynı şirkette farklı pozisyonlarda çalıştım. 
+
+Artık okulu bitirmiştim ve iş hayatına geçiş yapmam gerekiyordu. Türkiye’ye dönmeye ve hayatıma burada devam etmeye karar verdim. Dönüşümün üzerinden daha bir ay geçmeden, uluslararası bir şirketten MT pozisyonu için teklif aldım. Kariyerimi yönetici olarak sürdürmek istediğimden yönetime yakın bir pozisyonda işe başlamak benim için çok iyi olacaktı. Teklifi kabul ettim.
+
+Dört sene boyunca şirkette farklı projelerde yer aldım. Bana bağlı iki departmanın rutin işleri dışında yeni projeler geliştirip uygulamaya geçirmeye uğraşıyorduk. Proje ne olursa olsun bir şekilde IT ile bağlantısı oluyordu. Bu dönemde programlama öğrenmenin kariyerimi daha da ileriye taşıyabileceğine karar verdim. Her şirket gibi bizde çok fazla Excel kullanıyorduk ve bu yüzden Excel üzerinde çalışabilen VBA programlama dili ile programlamaya giriş yaptım. Kısa bir süre içinde hazırladığımız bir çok raporu otomatize etmiştim. Daha önce 3-4 gün süren işler, artık 4-5 dakikada bitiyordu ve insan hatasının önüne geçmiştik. 
+
+4 yıllık serüvenin ardından kariyerimde yeni bir başlangıca ihtiyaç duyuyordum. Her zaman kafamda olan kendi işimi yapma arzusu, ekonomik olarak kendimi sağlama almamla birlikte daha ağır basmaya başlamıştı. Yeniden bir risk alma zamanı gelmişti ve işimden ayrıldım. 
+
+Ne iş yapacağımı, kariyerimin nasıl devam edeceğini bilmiyordum. Kendime bir kaç ay zaman vermeye karar verdim. Bu zamanda kitap okuyacaktım, spor yapacaktım, gezecektim ve arkadaşlarımla daha fazla zaman geçirecektim. Sonrasında sakin kafayla tekrar kariyerime odaklanabilirdim. 
+
+Bu dönemde izlediğim iki yapım benim kariyerimin gidişatını komple değiştirdi. Bunlardan birincisi Alphago belgeseli, bir diğeri de Westworld’dü. Ortak noktaları yapay zeka olan iki yapımdan da çok etkilendim ve konuyla ilgili daha fazla araştırma yapmaya başladım. Fakat bilgisayar mühendisi veya istatistikçi olmadığım için teknik detayları anlayamıyordum. 
+
+Konu çok fazla ilgimi çekiyordu ve kariyerime bu alanda devam etmek istiyordum. Ama dediğim gibi hem yaşım, hem de önceki kariyerimden çok farklı bir alan olmasından kaynaklı problemler vardı. Bir seçim yaptım, yaşam maliyetlerimi oldukça kısacaktım ve yeniden üniversite okuyormuş gibi bu alana yönelecektim. 
+
+İnternet sağolsun eğitim için para harcamama gerek yoktu. Bu dönemde bir sürü programlama ve  istatitistik dersi aldım. Projeler yaptım ve genel anlamda konuyla ilgili bilgi birikimimi artırdım. Artık gönül rahatlığıyla bu işte iyi olduğumu iddaa edebilir bir hale geldim. 
+
+Bu yazıdan bir kaç ay önce de bir teklif aldım. Müşteri bir yapay zeka programı yazmamı istiyordu. Fatura kesebilmek için şirketimi kurdum ve şu anda şirketi büyütmek, yeni müşteriler bulmak için uğraşıyorum.
+
+Umarım başarabilirim. Ama başaramasam bile kendime şunu söyleyebileceğim: 
+
+- En azından denedim. </p>
+      		
+      
+  	</div>
+
+
+      </div>
+    </article>
+{% endblock content%}

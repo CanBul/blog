@@ -1,0 +1,19 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <small class="text-muted">{{ object.date_posted|date:"d F, Y" }}</small>
+        </div>
+          <h2 class="article-title" align="middle"> {{ object.title }} </h2>
+          <div align="justify" class = "post_body">
+            <p class="article-content">{{ object.first|urlize }}</p>
+            <p class="article-content">{{ object.content|urlize }}</p>
+            <div class="fb-like" data-href="www.canbulguoglu.com/post/{{ object.id }}" data-width=""
+            data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+          </div>
+        </div>
+    </article>
+
+{% endblock content%}

@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147998701-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-147998701-1');
+	</script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type= "text/css" href="{% static 'blog/main.css'%}">
+
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'blog/fav.ico' %}"/>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+
+    {% if title %}
+    <title>Can Bulguoğlu - {{title}}</title>
+    {%else%}
+    <title>Can Bulguoğlu</title>
+    {%endif%}
+  </head>
+
+  <body>
+    <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a href="{% url 'blog-home'%}" class="navbar-brand mr-4" ><img height="45" src="{%static 'blog/logo.png'%}" alt=""></a>
+
+      <a class="navbar-brand mr-4" href="/about"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="{% url 'blog-home'%}">Anasayfa</a>
+          <a class="nav-item nav-link" href="{% url 'blog-home'%}">Blog</a>
+          <a class="nav-item nav-link" href="/about">Hakkımda</a>
+          <a class="nav-item nav-link" href="{% url 'blog-email'%}">İletişim</a>
+        </div>
+        <!-- Navbar Right Side -->
+        <div class="navbar-nav">
+
+          <a class="nav-item nav-link" href="https://www.linkedin.com/in/can-bulguoglu-75974665/" target="_blank"><img height="30" src="{%static 'blog/in.jpeg'%}"></a>
+          <a class="nav-item nav-link" href="https://www.github.com/canbul" target="_blank"><img height="30" src="{%static 'blog/github.gif'%}"></a>
+          <a class="nav-item nav-link" href="https://www.kaggle.com/canbul" target="_blank"><img height="30" src="{%static 'blog/kaggle.png'%}"></a>
+          <a class="nav-item nav-link" href="https://www.hackerrank.com/canbulguoglu" target="_blank"><img height="30" src="{%static 'blog/hacker.jpeg'%}"></a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<main role="main" class="container">
+  <div class="row">
+  <div class="col-md-8">
+    {% if messages %}
+      {% for message in messages%}
+          <div class="alert alert-{{ message.tags}}">{{ message}}</div>
+      {% endfor %}
+    {% endif%}
+    {% block content %}{% endblock %}
+  </div>
+  <div class="col-md-4">
+    <div class="content-section">
+      <h3>Konu Başlıkları</h3>
+      <p class='text-muted'>
+        <ul class="list-group">
+
+
+          {% for post in konular%}
+          <a class="list-group-item list-group-item-light" href="{% url 'post-subject' post.0%}">{{ post.0 }} <font size="2">({{ post.1 }})</font></a>
+
+
+            <!-- <p class="article-content">{{ post }}</p> -->
+
+
+          {% endfor %}
+
+        </ul>
+      </p>
+    </div>
+  </div>
+  </div>
+  </main>
+
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+</html>
